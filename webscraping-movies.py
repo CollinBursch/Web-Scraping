@@ -1,4 +1,3 @@
-
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import openpyxl as xl
@@ -41,7 +40,7 @@ ws['B1'] = 'Movie Title'
 ws['C1'] = 'Release Date'
 ws['D1'] = 'Gross'
 ws['E1'] = 'Total Gross'
-ws['F1'] = x + 'of Total Gross'
+ws['F1'] = 'Percent of Total Gross'
 
 for x in range(1, 6):
     td = movie_rows[x].findAll('td')
