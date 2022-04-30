@@ -50,7 +50,7 @@ def main():
         old_value = round(price / (1 + (percent_change/100)), 2)
         value_change = round((old_value * (percent_change/100)),2)
         print(name, symbol, price, percent_change, value_change)
-        if (symbol == 'BTC' and price < 40000) or (symbol == 'ETH' and price < 3000):
+        if (symbol == 'BTC' and price < 40000) or (symbol == 'ETH' and price < 3000.00):
             twilio_text(name, symbol, price)
         
 
